@@ -1,0 +1,14 @@
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_one\bin\Debug\net8.0\fundamentals_one.exe
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_one\bin\Debug\net8.0\fundamentals_one.deps.json
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_one\bin\Debug\net8.0\fundamentals_one.runtimeconfig.json
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_one\bin\Debug\net8.0\fundamentals_one.dll
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_one\bin\Debug\net8.0\fundamentals_one.pdb
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_one\obj\Debug\net8.0\fundamentals_one.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_one\obj\Debug\net8.0\fundamentals_one.AssemblyInfoInputs.cache
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_one\obj\Debug\net8.0\fundamentals_one.AssemblyInfo.cs
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_one\obj\Debug\net8.0\fundamentals_one.csproj.CoreCompileInputs.cache
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_one\obj\Debug\net8.0\fundamentals_one.dll
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_one\obj\Debug\net8.0\refint\fundamentals_one.dll
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_one\obj\Debug\net8.0\fundamentals_one.pdb
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_one\obj\Debug\net8.0\fundamentals_one.genruntimeconfig.cache
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_one\obj\Debug\net8.0\ref\fundamentals_one.dll
