@@ -1,0 +1,15 @@
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\bin\Debug\net8.0\fundamentals_two.exe
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\bin\Debug\net8.0\fundamentals_two.deps.json
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\bin\Debug\net8.0\fundamentals_two.runtimeconfig.json
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\bin\Debug\net8.0\fundamentals_two.dll
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\bin\Debug\net8.0\fundamentals_two.pdb
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\obj\Debug\net8.0\fundamentals_two.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\obj\Debug\net8.0\fundamentals_two.AssemblyInfoInputs.cache
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\obj\Debug\net8.0\fundamentals_two.AssemblyInfo.cs
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\obj\Debug\net8.0\fundamentals_two.csproj.CoreCompileInputs.cache
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\obj\Debug\net8.0\fundamentals_two.sourcelink.json
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\obj\Debug\net8.0\fundamentals_two.dll
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\obj\Debug\net8.0\refint\fundamentals_two.dll
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\obj\Debug\net8.0\fundamentals_two.pdb
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\obj\Debug\net8.0\fundamentals_two.genruntimeconfig.cache
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_two\obj\Debug\net8.0\ref\fundamentals_two.dll

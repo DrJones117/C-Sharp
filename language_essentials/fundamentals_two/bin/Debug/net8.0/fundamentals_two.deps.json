@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "fundamentals_two/1.0.0": {
+        "runtime": {
+          "fundamentals_two.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "fundamentals_two/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
