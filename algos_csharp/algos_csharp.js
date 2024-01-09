@@ -49,6 +49,7 @@ class SinglyLinkedList {
      */
     isEmpty() {
         //your code here
+        return this.head === null;
     }
 
     /**
@@ -60,7 +61,16 @@ class SinglyLinkedList {
      * @returns {SinglyLinkedList} This list.
      */
     insertAtBack(data) {
-        //your code here
+        let newEnd = new ListNode(data);
+        if (this.isEmpty()) {
+            this.head = newEnd;
+            return;
+        }
+        let runner = this.head;
+        while (runner.next !== null) {
+            runner = runner.next;
+        }
+        runner.next = newEnd;
     }
 
     /**
@@ -75,6 +85,15 @@ class SinglyLinkedList {
      */
     insertAtBackRecursive(data, runner = this.head) {
         //your code here
+        if (this.head === null) {
+            this.head = new ListNode(data);
+            return;
+        }
+        if (runner.next === null) {
+            runner.next = new ListNode(data);
+            return;
+        }
+        return this.insertAtBackRecursive(data, runner.next);
     }
 
     /**
@@ -108,6 +127,57 @@ class SinglyLinkedList {
         
         return arr;
     }
+
+    /**
+     * Creates a new node with the given data and inserts that node at the front
+     * of this list.
+     * - Time: (?).
+     * - Space: (?).
+     * @param {any} data The data for the new node.
+     * @returns {SinglyLinkedList} This list.
+     */
+    insertAtFront(data) {
+        //your code here
+        let newHead = new ListNode(data);
+        newHead.next = this.head;
+        this.head = newHead;
+        return this;
+    }
+
+    /**
+     * Removes the first node of this list.
+     * - Time: (?).
+     * - Space: (?).
+     * @returns {any} The data from the removed node or null if empty.
+     */
+    removeHead() {
+        //your code here
+        if (this.isEmpty()) return null;
+        let removed = this.head;
+        this.head = this.head.next;
+        return removed.data;
+    }
+
+    // EXTRA
+    /**
+     * Calculates the average of this list.
+     * - Time: (?).
+     * - Space: (?).
+     * @returns {number|NaN} The average of the node's data.
+     */
+    average() {
+        //your code here
+        if (this.isEmpty()) return null;
+        let runner = this.head;
+        let count = 0;
+        let sum = 0;
+        while (runner) {
+            count++;
+            sum += runner.data;
+            runner = runner.next;
+        }
+        return sum / count;
+    }
 }
 
 /******************************************************************* 
@@ -136,6 +206,6 @@ const unorderedList = new SinglyLinkedList().insertAtBackMany([
   // const sortedDupeList = new SinglyLinkedList().insertAtBackMany([
   //   1, 1, 1, 2, 3, 3, 4, 5, 5,
   // ]);
-
+  
   // Print your list like so:
   // console.log(firstThreeList.toArr());
