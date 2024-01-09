@@ -1,0 +1,15 @@
+C:\CodingDojo\C-Sharp\oop\drink_maker\bin\Debug\net8.0\drink_maker.exe
+C:\CodingDojo\C-Sharp\oop\drink_maker\bin\Debug\net8.0\drink_maker.deps.json
+C:\CodingDojo\C-Sharp\oop\drink_maker\bin\Debug\net8.0\drink_maker.runtimeconfig.json
+C:\CodingDojo\C-Sharp\oop\drink_maker\bin\Debug\net8.0\drink_maker.dll
+C:\CodingDojo\C-Sharp\oop\drink_maker\bin\Debug\net8.0\drink_maker.pdb
+C:\CodingDojo\C-Sharp\oop\drink_maker\obj\Debug\net8.0\drink_maker.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodingDojo\C-Sharp\oop\drink_maker\obj\Debug\net8.0\drink_maker.AssemblyInfoInputs.cache
+C:\CodingDojo\C-Sharp\oop\drink_maker\obj\Debug\net8.0\drink_maker.AssemblyInfo.cs
+C:\CodingDojo\C-Sharp\oop\drink_maker\obj\Debug\net8.0\drink_maker.csproj.CoreCompileInputs.cache
+C:\CodingDojo\C-Sharp\oop\drink_maker\obj\Debug\net8.0\drink_maker.sourcelink.json
+C:\CodingDojo\C-Sharp\oop\drink_maker\obj\Debug\net8.0\drink_maker.dll
+C:\CodingDojo\C-Sharp\oop\drink_maker\obj\Debug\net8.0\refint\drink_maker.dll
+C:\CodingDojo\C-Sharp\oop\drink_maker\obj\Debug\net8.0\drink_maker.pdb
+C:\CodingDojo\C-Sharp\oop\drink_maker\obj\Debug\net8.0\drink_maker.genruntimeconfig.cache
+C:\CodingDojo\C-Sharp\oop\drink_maker\obj\Debug\net8.0\ref\drink_maker.dll
