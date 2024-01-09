@@ -1,0 +1,15 @@
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\bin\Debug\net8.0\puzzles.exe
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\bin\Debug\net8.0\puzzles.deps.json
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\bin\Debug\net8.0\puzzles.runtimeconfig.json
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\bin\Debug\net8.0\puzzles.dll
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\bin\Debug\net8.0\puzzles.pdb
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\obj\Debug\net8.0\puzzles.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\obj\Debug\net8.0\puzzles.AssemblyInfoInputs.cache
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\obj\Debug\net8.0\puzzles.AssemblyInfo.cs
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\obj\Debug\net8.0\puzzles.csproj.CoreCompileInputs.cache
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\obj\Debug\net8.0\puzzles.sourcelink.json
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\obj\Debug\net8.0\puzzles.dll
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\obj\Debug\net8.0\refint\puzzles.dll
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\obj\Debug\net8.0\puzzles.pdb
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\obj\Debug\net8.0\puzzles.genruntimeconfig.cache
+C:\CodingDojo\C-Sharp\language_essentials\puzzles\obj\Debug\net8.0\ref\puzzles.dll
