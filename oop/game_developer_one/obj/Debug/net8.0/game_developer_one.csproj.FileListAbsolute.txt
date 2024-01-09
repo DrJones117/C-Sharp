@@ -1,0 +1,15 @@
+C:\CodingDojo\C-Sharp\oop\game_developer_one\bin\Debug\net8.0\game_developer_one.exe
+C:\CodingDojo\C-Sharp\oop\game_developer_one\bin\Debug\net8.0\game_developer_one.deps.json
+C:\CodingDojo\C-Sharp\oop\game_developer_one\bin\Debug\net8.0\game_developer_one.runtimeconfig.json
+C:\CodingDojo\C-Sharp\oop\game_developer_one\bin\Debug\net8.0\game_developer_one.dll
+C:\CodingDojo\C-Sharp\oop\game_developer_one\bin\Debug\net8.0\game_developer_one.pdb
+C:\CodingDojo\C-Sharp\oop\game_developer_one\obj\Debug\net8.0\game_developer_one.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodingDojo\C-Sharp\oop\game_developer_one\obj\Debug\net8.0\game_developer_one.AssemblyInfoInputs.cache
+C:\CodingDojo\C-Sharp\oop\game_developer_one\obj\Debug\net8.0\game_developer_one.AssemblyInfo.cs
+C:\CodingDojo\C-Sharp\oop\game_developer_one\obj\Debug\net8.0\game_developer_one.csproj.CoreCompileInputs.cache
+C:\CodingDojo\C-Sharp\oop\game_developer_one\obj\Debug\net8.0\game_developer_one.sourcelink.json
+C:\CodingDojo\C-Sharp\oop\game_developer_one\obj\Debug\net8.0\game_developer_one.dll
+C:\CodingDojo\C-Sharp\oop\game_developer_one\obj\Debug\net8.0\refint\game_developer_one.dll
+C:\CodingDojo\C-Sharp\oop\game_developer_one\obj\Debug\net8.0\game_developer_one.pdb
+C:\CodingDojo\C-Sharp\oop\game_developer_one\obj\Debug\net8.0\game_developer_one.genruntimeconfig.cache
+C:\CodingDojo\C-Sharp\oop\game_developer_one\obj\Debug\net8.0\ref\game_developer_one.dll
