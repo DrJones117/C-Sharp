@@ -1,0 +1,15 @@
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\bin\Debug\net8.0\fundamentals_three.exe
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\bin\Debug\net8.0\fundamentals_three.deps.json
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\bin\Debug\net8.0\fundamentals_three.runtimeconfig.json
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\bin\Debug\net8.0\fundamentals_three.dll
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\bin\Debug\net8.0\fundamentals_three.pdb
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\obj\Debug\net8.0\fundamentals_three.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\obj\Debug\net8.0\fundamentals_three.AssemblyInfoInputs.cache
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\obj\Debug\net8.0\fundamentals_three.AssemblyInfo.cs
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\obj\Debug\net8.0\fundamentals_three.csproj.CoreCompileInputs.cache
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\obj\Debug\net8.0\fundamentals_three.sourcelink.json
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\obj\Debug\net8.0\fundamentals_three.dll
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\obj\Debug\net8.0\refint\fundamentals_three.dll
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\obj\Debug\net8.0\fundamentals_three.pdb
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\obj\Debug\net8.0\fundamentals_three.genruntimeconfig.cache
+C:\CodingDojo\C-Sharp\language_essentials\fundamentals_three\obj\Debug\net8.0\ref\fundamentals_three.dll
