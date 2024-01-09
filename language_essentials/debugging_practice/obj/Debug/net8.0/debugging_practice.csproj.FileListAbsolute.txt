@@ -1,0 +1,15 @@
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\obj\Debug\net8.0\debugging_practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\obj\Debug\net8.0\debugging_practice.AssemblyInfoInputs.cache
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\obj\Debug\net8.0\debugging_practice.AssemblyInfo.cs
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\obj\Debug\net8.0\debugging_practice.csproj.CoreCompileInputs.cache
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\obj\Debug\net8.0\debugging_practice.sourcelink.json
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\bin\Debug\net8.0\debugging_practice.exe
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\bin\Debug\net8.0\debugging_practice.deps.json
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\bin\Debug\net8.0\debugging_practice.runtimeconfig.json
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\bin\Debug\net8.0\debugging_practice.dll
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\bin\Debug\net8.0\debugging_practice.pdb
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\obj\Debug\net8.0\debugging_practice.dll
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\obj\Debug\net8.0\refint\debugging_practice.dll
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\obj\Debug\net8.0\debugging_practice.pdb
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\obj\Debug\net8.0\debugging_practice.genruntimeconfig.cache
+C:\CodingDojo\C-Sharp\language_essentials\debugging_practice\obj\Debug\net8.0\ref\debugging_practice.dll
