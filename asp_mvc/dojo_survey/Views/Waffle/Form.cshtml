@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+    </div>
+    <h1 class="d-flex justify-content-center mb-5">Form</h1>
+
+    <div class="d-flex justify-content-center">
+        <form action="/process" method="post" class="w-50">
+            <div class="mb-3">
+                <label for="Name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="Name" name="Name">
+            </div>
+
+            <div class="mb-3">
+            <label for="Location">Dojo Location</label>
+            <select class="form-select" id="Location" name="Location">
+                <option selected>Choose...</option>
+                <option value="Mars">Mars</option>
+                <option value="Delta 1">Delta 1</option>
+                <option value="Chronos">Chronos</option>
+                <option value="Arbor 4">Arbor 4</option>
+            </select>
+            </div>
+
+            <div class="mb-3">
+            <label for="Language">Favorite Language</label>
+            <select class="form-select" id="Language" name="Language">
+                <option selected>Choose...</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+                <option value="Ruby">Ruby</option>
+                <option value="Java">Java</option>
+            </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-check-label" for="Comment">Comment (Optional)</label>
+                <textarea type="text" class="form-control" id="Comment" name="Comment"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

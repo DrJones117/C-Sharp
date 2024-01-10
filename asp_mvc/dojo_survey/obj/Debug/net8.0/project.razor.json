@@ -19327,6 +19327,17 @@
     "CSharpLanguageVersion": 1200
   },
   "RootNamespace": "dojo_survey",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey\\Views\\Waffle\\Params.cshtml",
+      "TargetPath": "Views\\Waffle\\Params.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey\\Views\\Waffle\\Form.cshtml",
+      "TargetPath": "Views\\Waffle\\Form.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.3"
 }
