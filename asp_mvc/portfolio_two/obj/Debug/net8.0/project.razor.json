@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\razor_fun\\obj\\Debug\\net8.0\\project.razor.json",
-  "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\razor_fun\\razor_fun.csproj",
+  "SerializedFilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\portfolio_two\\obj\\Debug\\net8.0\\project.razor.json",
+  "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\portfolio_two\\portfolio_two.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "8.0",
@@ -19326,11 +19326,21 @@
     ],
     "CSharpLanguageVersion": 1200
   },
-  "RootNamespace": "razor_fun",
+  "RootNamespace": "portfolio_two",
   "Documents": [
     {
-      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\razor_fun\\Views\\Waffle\\Index.cshtml",
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\portfolio_two\\Views\\Waffle\\Projects.cshtml",
+      "TargetPath": "Views\\Waffle\\Projects.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\portfolio_two\\Views\\Waffle\\Index.cshtml",
       "TargetPath": "Views\\Waffle\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\portfolio_two\\Views\\Waffle\\Contact.cshtml",
+      "TargetPath": "Views\\Waffle\\Contact.cshtml",
       "FileKind": "mvc"
     }
   ],

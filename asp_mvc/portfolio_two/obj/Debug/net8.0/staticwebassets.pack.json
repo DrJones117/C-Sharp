@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\portfolio_two\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.portfolio_two.props",
+      "PackagePath": "build\\portfolio_two.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.portfolio_two.props",
+      "PackagePath": "buildMultiTargeting\\portfolio_two.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.portfolio_two.props",
+      "PackagePath": "buildTransitive\\portfolio_two.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.portfolio_two.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

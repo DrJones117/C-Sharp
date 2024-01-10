@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "AfG8rUIiCmE0QP6r2EQMroOkIwXr8ivKHMzTnWQCWNo=",
+  "Source": "portfolio_two",
+  "BasePath": "_content/portfolio_two",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "portfolio_two\\wwwroot",
+      "Source": "portfolio_two",
+      "ContentRoot": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\portfolio_two\\wwwroot\\",
+      "BasePath": "_content/portfolio_two",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\portfolio_two\\wwwroot\\css\\bootstrap.css",
+      "SourceId": "portfolio_two",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\portfolio_two\\wwwroot\\",
+      "BasePath": "_content/portfolio_two",
+      "RelativePath": "css/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.css"
+    }
+  ]
+}

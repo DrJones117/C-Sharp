@@ -7,17 +7,25 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = razor_fun
-build_property.RootNamespace = razor_fun
-build_property.ProjectDir = c:\CodingDojo\C-Sharp\asp_mvc\razor_fun\
+build_property.RootNamespace = portfolio_two
+build_property.RootNamespace = portfolio_two
+build_property.ProjectDir = c:\CodingDojo\C-Sharp\asp_mvc\portfolio_two\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\CodingDojo\C-Sharp\asp_mvc\razor_fun
+build_property.MSBuildProjectDirectory = c:\CodingDojo\C-Sharp\asp_mvc\portfolio_two
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/CodingDojo/C-Sharp/asp_mvc/razor_fun/Views/Waffle/Index.cshtml]
+[c:/CodingDojo/C-Sharp/asp_mvc/portfolio_two/Views/Waffle/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FmZmxlXENvbnRhY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/CodingDojo/C-Sharp/asp_mvc/portfolio_two/Views/Waffle/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FmZmxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/CodingDojo/C-Sharp/asp_mvc/portfolio_two/Views/Waffle/Projects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FmZmxlXFByb2plY3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
