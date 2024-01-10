@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    @{List<string> strList = new(["Button", "Header", "Body", "Title"]);}
+    <h1>Here are some delicious foods!</h1>
+    @{
+        foreach (string entry in strList)
+        {
+            <p>@entry</p>
+        }
+    }
+</body>
+</html>
