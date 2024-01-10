@@ -178,6 +178,64 @@ class SinglyLinkedList {
         }
         return sum / count;
     }
+
+        /**
+     * Removes the last node of this list.
+     * - Time: O(?).
+     * - Space: O(?).
+     * @returns {any} The data from the node that was removed or null if no nodes were removed.
+    */
+    removeBack() {
+        if (this.isEmpty()) {
+            return null;
+        }
+
+        // only one node, remove the head
+        if (this.head.next === null) {
+            return this.removeHead();
+        }
+        //more than one node, move to one before the end
+        let runner = this.head;
+        while (runner.next.next) {
+            runner = runner.next;
+        }
+
+        const removedData = runner.next.data;
+        runner.next = null;
+        return removedData;
+    }
+
+    /**
+     * Determines whether or not the given search value exists in this list iteratively.
+     * - Time: O(?).
+     * - Space: O(?).
+     * @param {any} val The data to search for in the nodes of this list.
+     * @returns {boolean}
+     */
+    contains(val) {
+        let runner = this.head;
+        while (runner) {
+            if (runner.data === val) return true;
+            runner = runner.next;
+        }
+        return false;
+    }
+
+    /**
+     * Determines whether or not the given search value exists in this list recursively.
+     * - Time: O(?).
+     * - Space: O(?).
+     * @param {any} val The data to search for in the nodes of this list.
+     * @param {?ListNode} current The current node during the traversal of this list
+     *    or null when the end of the list has been reached.
+     * @returns {boolean}
+     */
+    containsRecursive(val, current = this.head) {
+        //Your code here
+        if (!current) return false;
+        if (current.data === val) return true;
+        return this.containsRecursive(val, current.next);
+    }
 }
 
 /******************************************************************* 
