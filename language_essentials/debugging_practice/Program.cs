@@ -42,7 +42,7 @@ for (int i = 0; i < EvenMoreNumbers.Count; i++)
 // What can we learn from this error message?
 string MyString = "superduberawesome";
 // Strings are immutable
-MyString[7] = "p";
+// MyString[7] = "p";
 
 
 // Challenge 6
