@@ -1,6 +1,6 @@
 using System.Reflection.Metadata.Ecma335;
 
-public class Vehicle
+abstract class Vehicle
 {
     private string _Name;
     public string Name { get {return _Name;} set{_Name = value;}}
@@ -38,7 +38,7 @@ public class Vehicle
 
     public virtual void Travel(int distance)
     {
-        Console.WriteLine("Driving...");
+        Console.WriteLine("Traveling...");
         Miles += distance;
     }
 }

@@ -1,0 +1,15 @@
+C:\CodingDojo\C-Sharp\oop\fuel_up\bin\Debug\net8.0\fuel_up.exe
+C:\CodingDojo\C-Sharp\oop\fuel_up\bin\Debug\net8.0\fuel_up.deps.json
+C:\CodingDojo\C-Sharp\oop\fuel_up\bin\Debug\net8.0\fuel_up.runtimeconfig.json
+C:\CodingDojo\C-Sharp\oop\fuel_up\bin\Debug\net8.0\fuel_up.dll
+C:\CodingDojo\C-Sharp\oop\fuel_up\bin\Debug\net8.0\fuel_up.pdb
+C:\CodingDojo\C-Sharp\oop\fuel_up\obj\Debug\net8.0\fuel_up.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodingDojo\C-Sharp\oop\fuel_up\obj\Debug\net8.0\fuel_up.AssemblyInfoInputs.cache
+C:\CodingDojo\C-Sharp\oop\fuel_up\obj\Debug\net8.0\fuel_up.AssemblyInfo.cs
+C:\CodingDojo\C-Sharp\oop\fuel_up\obj\Debug\net8.0\fuel_up.csproj.CoreCompileInputs.cache
+C:\CodingDojo\C-Sharp\oop\fuel_up\obj\Debug\net8.0\fuel_up.sourcelink.json
+C:\CodingDojo\C-Sharp\oop\fuel_up\obj\Debug\net8.0\fuel_up.dll
+C:\CodingDojo\C-Sharp\oop\fuel_up\obj\Debug\net8.0\refint\fuel_up.dll
+C:\CodingDojo\C-Sharp\oop\fuel_up\obj\Debug\net8.0\fuel_up.pdb
+C:\CodingDojo\C-Sharp\oop\fuel_up\obj\Debug\net8.0\fuel_up.genruntimeconfig.cache
+C:\CodingDojo\C-Sharp\oop\fuel_up\obj\Debug\net8.0\ref\fuel_up.dll
