@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey\\obj\\Debug\\net8.0\\project.razor.json",
-  "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey\\dojo_survey.csproj",
+  "SerializedFilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey_validations\\obj\\Debug\\net8.0\\project.razor.json",
+  "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey_validations\\dojo_survey-validations.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "8.0",
@@ -19326,16 +19326,41 @@
     ],
     "CSharpLanguageVersion": 1200
   },
-  "RootNamespace": "dojo_survey",
+  "RootNamespace": "dojo_survey_validations",
   "Documents": [
     {
-      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey\\Views\\Waffle\\Form.cshtml",
-      "TargetPath": "Views\\Waffle\\Form.cshtml",
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey_validations\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey\\Views\\Waffle\\Params.cshtml",
-      "TargetPath": "Views\\Waffle\\Params.cshtml",
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey_validations\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey_validations\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey_validations\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey_validations\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey_validations\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey_validations\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],
