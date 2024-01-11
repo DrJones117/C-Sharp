@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\portfolio_two\\obj\\Debug\\net8.0\\project.razor.json",
-  "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\portfolio_two\\portfolio_two.csproj",
+  "SerializedFilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\view_model_fun\\obj\\Debug\\net8.0\\project.razor.json",
+  "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\view_model_fun\\view_model_fun.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "8.0",
@@ -19326,21 +19326,41 @@
     ],
     "CSharpLanguageVersion": 1200
   },
-  "RootNamespace": "portfolio_two",
+  "RootNamespace": "view_model_fun",
   "Documents": [
     {
-      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\portfolio_two\\Views\\Waffle\\Contact.cshtml",
-      "TargetPath": "Views\\Waffle\\Contact.cshtml",
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\view_model_fun\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\portfolio_two\\Views\\Waffle\\Index.cshtml",
-      "TargetPath": "Views\\Waffle\\Index.cshtml",
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\view_model_fun\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\portfolio_two\\Views\\Waffle\\Projects.cshtml",
-      "TargetPath": "Views\\Waffle\\Projects.cshtml",
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\view_model_fun\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\view_model_fun\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\view_model_fun\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\view_model_fun\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CodingDojo\\C-Sharp\\asp_mvc\\view_model_fun\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     }
   ],
