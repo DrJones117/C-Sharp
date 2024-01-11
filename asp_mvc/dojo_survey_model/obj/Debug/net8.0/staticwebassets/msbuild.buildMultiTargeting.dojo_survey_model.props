@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\dojo_survey_model.props" />
+</Project>

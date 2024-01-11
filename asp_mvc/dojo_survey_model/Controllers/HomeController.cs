@@ -13,9 +13,32 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Form()
+    public IActionResult Index()
     {
         return View();
+    }
+
+    [HttpPost]
+    [Route("process")]
+    public RedirectToActionResult Process(Survey user)
+    {
+
+        return RedirectToAction("Params", new {name=user.Name, location=user.Location, language=user.Language, comment=user.Comment });
+    }
+
+    [HttpGet("param/{name}/{location}/{language}/{comment}")]
+    public ViewResult Params(string name, string location, string language, string comment)
+    {
+        Console.WriteLine($"Name: {name} Location: {location} Language: {language} Comment: {comment}");
+
+    Survey User = new()
+    {
+        Name = name,
+        Location = location,
+        Language = language,
+        Comment = comment
+    };
+        return View(User);
     }
 
     public IActionResult Privacy()
