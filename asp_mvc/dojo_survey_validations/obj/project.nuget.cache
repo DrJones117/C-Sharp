@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C9+BCRotdSArCsLZLB3YGOwccM4OMuKFBhxFrPB/xJWBlKlMUY4sBkBH0XzZyq+xoYQJjHcUoaADHchszZWWbA==",
+  "dgSpecHash": "nX7RU9tTVbwQ/kqJApbghTELLC5jfMnZM1xYlae+SO200xmx75thN3AGw71cV1QN+XKFouuyPKIlgRphxbrouQ==",
   "success": true,
-  "projectFilePath": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey-validations\\dojo_survey-validations.csproj",
+  "projectFilePath": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey_validations\\dojo_survey-validations.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

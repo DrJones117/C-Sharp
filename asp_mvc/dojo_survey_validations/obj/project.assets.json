@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey-validations\\dojo_survey-validations.csproj",
+      "projectUniqueName": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey_validations\\dojo_survey-validations.csproj",
       "projectName": "dojo_survey-validations",
-      "projectPath": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey-validations\\dojo_survey-validations.csproj",
+      "projectPath": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey_validations\\dojo_survey-validations.csproj",
       "packagesPath": "C:\\Users\\judah\\.nuget\\packages\\",
-      "outputPath": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey-validations\\obj\\",
+      "outputPath": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\dojo_survey_validations\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\judah\\AppData\\Roaming\\NuGet\\NuGet.Config"

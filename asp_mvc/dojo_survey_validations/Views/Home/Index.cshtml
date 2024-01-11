@@ -1,8 +1,36 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model Survey
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="d-flex justify-content-center mb-5">Form</h1>
+
+    <div class="d-flex justify-content-center">
+        <form asp-action="Process" asp-controller="Home" method="post" class="w-50">
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label">Name</label>
+                <input class="form-control" asp-for="Name">
+                <span class="text-danger" asp-validation-for="Name"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Location">Dojo Location</label>
+                <select class="form-select" asp-for="Location" asp-items="@ViewBag.LocationChoices"></select>
+                <span class="text-danger" asp-validation-for="Location"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Language">Dojo Location</label>
+                <select class="form-select" asp-for="Language" asp-items="@ViewBag.LanguageChoices"></select>
+                <span class="text-danger" asp-validation-for="Language"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-check-label" asp-for="Comment">Comment (Optional)</label>
+                <textarea class="form-control" asp-for="Comment"></textarea>
+                <span class="text-danger" asp-validation-for="Comment"></span>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
 </div>
