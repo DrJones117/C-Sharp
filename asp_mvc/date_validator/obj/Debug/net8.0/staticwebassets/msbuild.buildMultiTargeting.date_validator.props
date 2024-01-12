@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\date_validator.props" />
+</Project>

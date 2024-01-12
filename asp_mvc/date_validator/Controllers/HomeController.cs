@@ -18,6 +18,35 @@ public class HomeController : Controller
         return View();
     }
 
+    [HttpPost]
+    [Route("process")]
+    public IActionResult Process(Birthday model)
+    {
+        Console.WriteLine($"Here is the model {model.BirthDate}");
+        if (ModelState.IsValid)
+        {
+            Console.WriteLine("Success");
+            return RedirectToAction("Success");
+        }
+        else
+        {
+            var message = string.Join(" | ", ModelState.Values
+            .SelectMany(v => v.Errors)
+            .Select(e => e.ErrorMessage));
+            Console.WriteLine(message);
+
+            return View("Index", model);
+        }
+    }
+
+    [HttpGet]
+    [Route("success")]
+    public ViewResult Success()
+    {
+
+        return View();
+    }
+
     public IActionResult Privacy()
     {
         return View();

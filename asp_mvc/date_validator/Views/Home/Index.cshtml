@@ -1,8 +1,15 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model Birthday
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div style="margin-left: 35%" class="w-25 d-flex justify-content-center">
+    <form asp-action="Process" asp-controller="Home" method="post">
+        <div class="mb-3">
+            <label asp-for="BirthDate">Birthday:</label>
+            <input asp-for="BirthDate" class="form-control">
+            <span asp-validation-for="BirthDate" class="text-danger"></span>
+        </div>
+        <button class="btn btn-primary">Submit Birthday</button>
+    </form>
 </div>
