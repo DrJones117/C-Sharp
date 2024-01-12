@@ -245,7 +245,17 @@ class SinglyLinkedList {
      *    second to last node.
      */
     secondToLast() {
-        
+        if (!this.head || !this.head.next) {
+            return null;
+        }
+
+        // There are at least 2 nodes since the above return hasn't happened.
+        let runner = this.head;
+
+        while (runner.next.next) {
+            runner = runner.next;
+        }
+        return runner.data;
     }
 
     /**
@@ -257,7 +267,25 @@ class SinglyLinkedList {
      * @returns {boolean} Indicates if a node was removed or not.
      */
     removeVal(val) {
-        //your code here
+        if (this.isEmpty()) {
+            return false;
+        }
+
+        if (this.head.data === val) {
+            this.removeHead();
+            return true;
+        }
+
+        let runner = this.head;
+
+        while (runner.next) {
+            if (runner.next.data === val) {
+                runner.next = runner.next.next;
+                return true;
+            }
+            runner = runner.next;
+        }
+        return false;
     }
 
     // EXTRA
@@ -271,7 +299,98 @@ class SinglyLinkedList {
      * @returns {boolean} To indicate whether the node was pre-pended or not.
      */
     prepend(newVal, targetVal) {
-        //your code here
+        if (this.isEmpty()) {
+            return null;
+        }
+
+        if (this.head.data === targetVal) {
+            this.insertAtFront(newVal);
+            return this.head;
+        }
+        // we already know we're not going to need to prepend before the head
+        let runner = this.head;
+
+        while (runner) {
+            // End of list and not found.
+            if (runner.next === null) {
+                return false;
+            }
+
+            if (runner.next.data === targetVal) {
+                const prependNode = new ListNode(newVal);
+                prependNode.next = runner.next;
+                runner.next = prependNode;
+                return prependNode;
+            }
+            runner = runner.next;
+        }
+    }
+    /**
+     * Concatenates the nodes of a given list onto the back of this list.
+     * - Time: O(?).
+     * - Space: O(?).
+     * @param {SinglyLinkedList} addList An instance of a different list whose
+     *    whose nodes will be added to the back of this list.
+     * @returns {SinglyLinkedList} This list with the added nodes.
+     */
+    concat(addList) {
+        if (this.head === null)
+        {
+            return this;
+        }
+
+        if (addList.head === null) 
+        {
+            return this;
+        }
+
+        let runner = this.head;
+        while (runner.next)
+        {
+            runner = runner.next;
+        }
+
+        runner.next = addList.head;
+
+        return this;
+    }
+
+    /**
+     * Finds the node with the smallest data and moves that node to the front of
+     * this list.
+     * - Time: O(?).
+     * - Space: O(?).
+     * @returns {SinglyLinkedList} This list.
+     */
+    moveMinToFront() {
+        if (this.head === null)
+        {
+            return null
+        }
+
+        let lowestNode = this.head;
+        let runner = this.head;
+        let pre = this.head;
+
+        while (runner.next)
+        {
+            if (runner.next.data < lowestNode.data)
+            {
+                pre = runner;
+                lowestNode = runner.next;
+            }
+        }
+        if (lowestNode === this.head)
+        {
+            return this;
+        }
+        else
+        {
+            let randVar = lowestNode
+            this.removeVal(lowestNode.data)
+            this.insertAtFront(randVar.data)
+            return this
+        }
     }
 }
 
@@ -287,8 +406,18 @@ const biNodeList = new SinglyLinkedList().insertAtBackMany([1, 2]);
 const firstThreeList = new SinglyLinkedList().insertAtBackMany([1, 2, 3]);
 const secondThreeList = new SinglyLinkedList().insertAtBackMany([4, 5, 6]);
 const unorderedList = new SinglyLinkedList().insertAtBackMany([
--5, -10, 4, -3, 6, 1, -7, -2,
+-5, -10, 4, -3, 6, 1, -7, -2
 ]);
+
+
+// Test case for concat
+// firstThreeList.concat(secondThreeList);
+// console.log(firstThreeList.toArr(), "should be", "[1, 2, 3, 4, 5, 6]")
+
+//Test case for move min to front
+unorderedList.moveMinToFront();
+console.log(unorderedList.toArr(), "should be", "[-10, -5, 4, -3, 6, 1, -7, 2]")
+
 
   /* node 4 connects to node 1, back to head */
   // const perfectLoopList = new SinglyLinkedList().insertAtBackMany([1, 2, 3, 4]);
