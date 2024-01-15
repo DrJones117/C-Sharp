@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "CUrOW7cTb/+ZgCV4HpaCNXukUMrr4mLVKN7KaB71bTFW+m2YyHY9BODSMjehW8PII71zG63Bs6QZLAPC/CJAyA==",
+  "dgSpecHash": "BA91C3+B+DB6TRqEvnoygf5DJNksY7PD/q4fSUTdDLyZbDJfYz7n+HQAryQsG+hdahEZOpBuxn5hErExzUuS8g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nicho\\Desktop\\CodingDojo\\Curriculum\\CSharp\\DebuggingChallenge\\DebuggingChallenge.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\debugging_challenge\\DebuggingChallenge.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\judah\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\judah\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\judah\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\judah\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

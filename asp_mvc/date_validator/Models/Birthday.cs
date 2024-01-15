@@ -4,7 +4,6 @@ namespace date_validator.Models;
 
 public class Birthday
 {
-    [Required]
     [BirthDateValidation]
     public DateTime BirthDate {get;set;}
 }

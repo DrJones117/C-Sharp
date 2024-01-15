@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="d-flex justify-content-center">
+    <div class="border border-dark p-3 h-25 m-1">
+        <h1>Start Date</h1>
+        <h2>@ViewData["formattedStart"]</h2>
+    </div>
+    <div class="border border-dark p-3 h-25 m-1">
+        <h1>End Date</h1>
+        <h2>@ViewData["formattedEnd"]</h2>
+    </div>
+</div>
+
+<div>
+    <h1 class="d-flex justify-content-center m-3">Time Remaining</h1>
+    <div>
+        <h2 class="d-flex justify-content-center">@ViewData["formattedTimeRemaining"]</h2>
+        <h2 class="d-flex justify-content-center">Remaining</h2>
+    </div>
+</div>

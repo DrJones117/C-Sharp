@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nicho\\Desktop\\CodingDojo\\Curriculum\\CSharp\\DebuggingChallenge\\DebuggingChallenge.csproj": {}
+    "C:\\CodingDojo\\C-Sharp\\asp_mvc\\debugging_challenge\\DebuggingChallenge.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nicho\\Desktop\\CodingDojo\\Curriculum\\CSharp\\DebuggingChallenge\\DebuggingChallenge.csproj": {
+    "C:\\CodingDojo\\C-Sharp\\asp_mvc\\debugging_challenge\\DebuggingChallenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nicho\\Desktop\\CodingDojo\\Curriculum\\CSharp\\DebuggingChallenge\\DebuggingChallenge.csproj",
+        "projectUniqueName": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\debugging_challenge\\DebuggingChallenge.csproj",
         "projectName": "DebuggingChallenge",
-        "projectPath": "C:\\Users\\nicho\\Desktop\\CodingDojo\\Curriculum\\CSharp\\DebuggingChallenge\\DebuggingChallenge.csproj",
-        "packagesPath": "C:\\Users\\nicho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nicho\\Desktop\\CodingDojo\\Curriculum\\CSharp\\DebuggingChallenge\\obj\\",
+        "projectPath": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\debugging_challenge\\DebuggingChallenge.csproj",
+        "packagesPath": "C:\\Users\\judah\\.nuget\\packages\\",
+        "outputPath": "C:\\CodingDojo\\C-Sharp\\asp_mvc\\debugging_challenge\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nicho\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\judah\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -43,10 +43,29 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -55,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
