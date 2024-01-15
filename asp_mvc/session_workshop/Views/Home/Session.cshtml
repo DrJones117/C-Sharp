@@ -1,0 +1,48 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="d-flex justify-content-between">
+    <h1 class="">Welcome @Context.Session.GetString("Name")</h1>
+    <a href="/" class="btn btn-danger h-50 mt-2">Log Out</a>
+</div>
+<hr>
+
+<div class="d-flex justify-content-center">
+    <h1>@Model</h1>
+</div>
+
+<div class="d-flex justify-content-center">
+    <div>
+        <form asp-action="Operations" asp-controller="Home">
+            <input type="hidden" value="1" name="value">
+            <input type="hidden" value="add" name="type">
+            <input type="hidden" value="@Model" name="start">
+            <button style="height: 50px; width: 100px;" class="btn btn-warning">+1</button>
+        </form>
+
+        <form asp-action="Operations" asp-controller="Home">
+            <input type="hidden" value="2" name="value">
+            <input type="hidden" value="times" name="type">
+            <input type="hidden" value="@Model" name="start">
+            <button style="height: 50px; width: 100px;" class="btn btn-danger">x2</button>
+        </form>
+    </div>
+
+    <div>
+        <form asp-action="Operations" asp-controller="Home"> 
+            <input type="hidden" value="1" name="value">
+            <input type="hidden" value="minus" name="type">
+            <input type="hidden" value="@Model" name="start">
+            <button style="height: 50px; width: 100px;" class="btn btn-primary">-1</button>
+        </form>
+
+        <form asp-action="Operations" asp-controller="Home">
+            <input type="hidden" value="" name="value">
+            <input type="hidden" value="random" name="type">
+            <input type="hidden" value="@Model" name="start">
+            <button style="height: 50px; width: 100px;" class="btn btn-success">+Random</button>
+        </form>
+    </div>
+</div>
+
