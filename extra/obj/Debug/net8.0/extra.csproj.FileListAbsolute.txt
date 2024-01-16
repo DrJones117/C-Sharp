@@ -1,0 +1,8 @@
+C:\CodingDojo\C-Sharp\extra\obj\Debug\net8.0\extra.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodingDojo\C-Sharp\extra\obj\Debug\net8.0\extra.AssemblyInfoInputs.cache
+C:\CodingDojo\C-Sharp\extra\obj\Debug\net8.0\extra.AssemblyInfo.cs
+C:\CodingDojo\C-Sharp\extra\obj\Debug\net8.0\extra.csproj.CoreCompileInputs.cache
+C:\CodingDojo\C-Sharp\extra\obj\Debug\net8.0\extra.MvcApplicationPartsAssemblyInfo.cache
+C:\CodingDojo\C-Sharp\extra\obj\Debug\net8.0\extra.RazorAssemblyInfo.cache
+C:\CodingDojo\C-Sharp\extra\obj\Debug\net8.0\extra.RazorAssemblyInfo.cs
+C:\CodingDojo\C-Sharp\extra\obj\Debug\net8.0\extra.sourcelink.json

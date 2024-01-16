@@ -1,0 +1,15 @@
+C:\CodingDojo\C-Sharp\linq\linq_eruption\bin\Debug\net8.0\YourProjectName.exe
+C:\CodingDojo\C-Sharp\linq\linq_eruption\bin\Debug\net8.0\YourProjectName.deps.json
+C:\CodingDojo\C-Sharp\linq\linq_eruption\bin\Debug\net8.0\YourProjectName.runtimeconfig.json
+C:\CodingDojo\C-Sharp\linq\linq_eruption\bin\Debug\net8.0\YourProjectName.dll
+C:\CodingDojo\C-Sharp\linq\linq_eruption\bin\Debug\net8.0\YourProjectName.pdb
+C:\CodingDojo\C-Sharp\linq\linq_eruption\obj\Debug\net8.0\YourProjectName.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodingDojo\C-Sharp\linq\linq_eruption\obj\Debug\net8.0\YourProjectName.AssemblyInfoInputs.cache
+C:\CodingDojo\C-Sharp\linq\linq_eruption\obj\Debug\net8.0\YourProjectName.AssemblyInfo.cs
+C:\CodingDojo\C-Sharp\linq\linq_eruption\obj\Debug\net8.0\YourProjectName.csproj.CoreCompileInputs.cache
+C:\CodingDojo\C-Sharp\linq\linq_eruption\obj\Debug\net8.0\YourProjectName.sourcelink.json
+C:\CodingDojo\C-Sharp\linq\linq_eruption\obj\Debug\net8.0\YourProjectName.dll
+C:\CodingDojo\C-Sharp\linq\linq_eruption\obj\Debug\net8.0\refint\YourProjectName.dll
+C:\CodingDojo\C-Sharp\linq\linq_eruption\obj\Debug\net8.0\YourProjectName.pdb
+C:\CodingDojo\C-Sharp\linq\linq_eruption\obj\Debug\net8.0\YourProjectName.genruntimeconfig.cache
+C:\CodingDojo\C-Sharp\linq\linq_eruption\obj\Debug\net8.0\ref\YourProjectName.dll
