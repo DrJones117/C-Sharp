@@ -1,6 +1,7 @@
 /**
  * Class to represent a Node in a Binary Search Tree (BST).
  */
+// https://www.cs.usfca.edu/~galles/visualization/BST.html
 class BSTNode {
     /**
      * Constructs a new instance of a BST node.
@@ -48,7 +49,6 @@ class BinarySearchTree {
         //your code here
         return this.root === null;
     }
-
     /**
      * Retrieves the smallest integer data from this tree.
      * - Time: O(?).
@@ -58,16 +58,14 @@ class BinarySearchTree {
      * @returns {number} The smallest integer from this tree.
      */
     min(current = this.root) {
-        if (this.isEmpty())
-        {
+        //your code here
+        if (current === null) {
             return null;
         }
 
-        while (current.left != null)
-        {
+        while (current.left) {
             current = current.left;
         }
-
         return current.data;
     }
 
@@ -80,19 +78,14 @@ class BinarySearchTree {
      * @returns {number} The smallest integer from this tree.
      */
     minRecursive(current = this.root) {
-        if (this.isEmpty())
-        {
+        if (current === null) {
             return null;
         }
-        
-        if (current.left == null)
-        {
+
+        if (current.left === null) {
             return current.data;
         }
-        else
-        {
-            return this.minRecursive(current = current.left)
-        }
+        return this.minRecursive(current.left);
     }
 
     /**
@@ -104,16 +97,13 @@ class BinarySearchTree {
      * @returns {number} The largest integer from this tree.
      */
     max(current = this.root) {
-        if (this.isEmpty())
-        {
+        if (current === null) {
             return null;
         }
 
-        while (current.right != null)
-        {
+        while (current.right) {
             current = current.right;
         }
-
         return current.data;
     }
 
@@ -126,18 +116,43 @@ class BinarySearchTree {
      * @returns {number} The largest integer from this tree.
      */
     maxRecursive(current = this.root) {
-        if (this.isEmpty())
-        {
-            return null
+        if (current === null) {
+            return null;
         }
 
-        if (current.right == null)
-        {
+        if (current.right === null) {
             return current.data;
         }
-
-        return this.maxRecursive(current = current.right);
+        return this.maxRecursive(current.right);
     }
+
+
+    /**
+     * Inserts a new node with the given newVal in the right place to preserver
+     * the order of this tree.
+     * - Time: O(?).
+     * - Space: O(?).
+     * @param {number} newVal The data to be added to a new node.
+     * @returns {BinarySearchTree} This tree.
+     */
+    insert(newVal) {
+        //your code here
+    }
+
+    /**
+     * Inserts a new node with the given newVal in the right place to preserver
+     * the order of this tree.
+     * - Time: O(?).
+     * - Space: O(?).
+     * @param {number} newVal The data to be added to a new node.
+     * @param {Node} curr The node that is currently accessed from the tree as
+     *    the tree is being traversed.
+     * @returns {BinarySearchTree} This tree.
+     */
+    insertRecursive(newVal, curr = this.root) {
+        //your code here
+    }
+
 
     // Logs this tree horizontally with the root on the left.
     print(node = this.root, spaceCnt = 0, spaceIncr = 10) {
@@ -187,30 +202,80 @@ threeLevelTree.root.left.right = new BSTNode(6);
 threeLevelTree.root.right = new BSTNode(15);
 threeLevelTree.root.right.left = new BSTNode(13);
 
-/* threeLevelTree 
+/* threeLevelTree
         root
         10
       /   \
     5     15
   / \    / \
-2   6  13  
+2   6  13
 */
 // threeLevelTree.print();
 
-// Test cases
 
-console.log(emptyTree.minRecursive());
-console.log(oneNodeTree.minRecursive());
-console.log(threeLevelTree.minRecursive());
 
-console.log(emptyTree.min());
-console.log(oneNodeTree.min());
-console.log(threeLevelTree.min());
+/***************** Uncomment after insert method is created. ****************/
+const fullTree = new BinarySearchTree();
+fullTree
+    .insert(25)
+    .insert(15)
+    .insert(10)
+    .insert(22)
+    .insert(4)
+    .insert(12)
+    .insert(18)
+    .insert(24)
+    .insert(50)
+    .insert(35)
+    .insert(70)
+    .insert(31)
+    .insert(44)
+    .insert(66)
+    .insert(90);
 
-console.log(emptyTree.maxRecursive());
-console.log(oneNodeTree.maxRecursive());
-console.log(threeLevelTree.maxRecursive());
+/* fullTree
+                    root
+                <-- 25 -->
+              /            \
+            15             50
+          /    \         /    \
+        10     22      35     70
+      /   \   /  \    /  \   /  \
+    4    12  18  24  31  44 66  90
 
-console.log(emptyTree.max());
-console.log(oneNodeTree.max());
-console.log(threeLevelTree.max());
+*/
+
+fullTree.print();
+
+// /***************** Uncomment after insert recursive method is created. ****************/
+// const fullTreeRecursive = new BinarySearchTree();
+// fullTreeRecursive
+//     .insertRecursive(25)
+//     .insertRecursive(15)
+//     .insertRecursive(10)
+//     .insertRecursive(22)
+//     .insertRecursive(4)
+//     .insertRecursive(12)
+//     .insertRecursive(18)
+//     .insertRecursive(24)
+//     .insertRecursive(50)
+//     .insertRecursive(35)
+//     .insertRecursive(70)
+//     .insertRecursive(31)
+//     .insertRecursive(44)
+//     .insertRecursive(66)
+//     .insertRecursive(90);
+
+// /* fullTree
+//                     root
+//                 <-- 25 -->
+//               /            \
+//             15             50
+//           /    \         /    \
+//         10     22      35     70
+//       /   \   /  \    /  \   /  \
+//     4    12  18  24  31  44 66  90
+
+// */
+
+// fullTreeRecursive.print();
