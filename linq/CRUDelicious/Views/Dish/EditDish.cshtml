@@ -1,50 +1,50 @@
 @{
-    ViewData["Title"] = "Dish Form";
+    ViewData["Title"] = "Editing @Model.Title";
 }
 @model Dish
 
-<h1 class="d-flex justify-content-center">Add a New Dish!</h1>
+<h1 class="d-flex justify-content-center">Editing @Model.Name</h1>
 <div class="d-flex justify-content-between" style="padding-left: 550px; padding-right: 550px">
     <a href="/dishes">Home</a>
     <p>|</p>
-    <a href="dishes/new">Add a Dish</a>
+    <a href="/dishes/new">Add a Dish</a>
 </div>
 
 <h3>Enter the dish information</h3>
-        <form asp-controller="Dish" asp-action="Create" method="post">
+        <form asp-controller="Dish" asp-route-DishId="@Model.DishId" asp-action="UpdateDish" method="post">
             <div class="d-flex">
                 <div class="w-25 me-5">
                     <div class="mb-3">
                         <label asp-for="Chef">Chef's Name</label>
-                        <input asp-for="Chef" class="form-control">
+                        <input asp-for="Chef" class="form-control" value="@Model.Chef">
                         <span class="text-danger" asp-validation-for="Chef"></span>
                     </div>
 
                     <div class="mb-3">
                         <label asp-for="Name">Name of Dish</label>
-                        <input asp-for="Name" class="form-control">
+                        <input asp-for="Name" class="form-control" value="@Model.Name">
                         <span class="text-danger"  asp-validation-for="Name"></span>
                     </div>
 
                     <div class="mb-3">
                         <label asp-for="Calories"># of Calories</label>
-                        <input asp-for="Calories" class="form-control">
+                        <input asp-for="Calories" class="form-control" value="@Model.Calories">
                         <span class="text-danger"  asp-validation-for="Calories"></span>
                     </div>
                 </div>
 
                 <div class="mb-3 me-5">
                     <label asp-for="Tastiness"></label>
-                    <select asp-for="Tastiness" class="form-control" asp-items="@ViewBag.TastinessChoices"></select>
+                    <select asp-for="Tastiness" class="form-control" asp-items="@ViewBag.TastinessChoices" value="@Model.Tastiness"></select>
                     <span class="text-danger"  asp-validation-for="Tastiness"></span>
                 </div>
 
                 <div class="mb-3">
                     <label asp-for="Description"></label>
-                    <textarea asp-for="Description" class="form-control" asp-items="@ViewBag.TastinessChoices"></textarea>
+                    <textarea asp-for="Description" class="form-control" value="@Model.Description"></textarea>
                     <span class="text-danger"  asp-validation-for="Description"></span>
                     <div>
-                        <button class="btn btn-primary mt-3">Submit Dish</button>
+                        <button class="btn btn-primary mt-3">Update Dish</button>
                     </div>
                 </div>
             </div>

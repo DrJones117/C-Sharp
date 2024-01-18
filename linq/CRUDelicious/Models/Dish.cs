@@ -13,9 +13,11 @@ public class Dish
     public string Chef { get; set; } 
 
     [Required]
+    [TastinessValidation]
     public int Tastiness { get; set; }
 
     [Required]
+    [CaloriesValidation]
     public int Calories { get; set; }
 
     [Required]
@@ -29,6 +31,28 @@ public class TastinessValidation : ValidationAttribute
 {
     protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
     {
-        
+        if ((int)value <= 0 || (int)value > 5)
+        {
+            return new ValidationResult("Tastiness must be between 1 and 5");
+        }
+        else
+        {
+            return ValidationResult.Success;
+        }
+    }
+}
+
+public class CaloriesValidation : ValidationAttribute
+{
+    protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
+    {
+        if ((int)value <= 0)
+        {
+            return new ValidationResult("The Dish must be more than 0 calories.");
+        }
+        else
+        {
+            return ValidationResult.Success;
+        }
     }
 }

@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Show Page";
+}
+
+<h1 class="d-flex justify-content-center">@Model.Name</h1>
+<div class="d-flex justify-content-between" style="padding-left: 550px; padding-right: 550px">
+    <a href="/dishes">Home</a>
+    <p>|</p>
+    <a href="/dishes/new">Add a Dish</a>
+</div>
+
+<div class="w-50">
+    <div class="d-flex">
+        <h2>@Model.Name by @Model.Chef</h2>
+        <form asp-action="EditDish" asp-controller="Dish" asp-route-DishId="@Model.DishId" method="get">
+            <button class="ms-3 btn btn-primary">Edit</button>
+        </form>
+
+        <form asp-action="DeleteDish" asp-controller="Dish" asp-route-DishId="@Model.DishId" method="post">
+            <button class="ms-3 btn btn-danger">Delete</button>
+        </form>
+    </div>
+    <hr>
+
+    <div>
+        <h5>Description:</h5>
+        <p>@Model.Description</p>
+        <h5>Calories: @Model.Calories</h5>
+        <h5>Tastiness: @Model.Tastiness</h5>
+    </div>
+</div>

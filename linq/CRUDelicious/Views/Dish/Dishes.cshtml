@@ -12,4 +12,11 @@
 <div class="w-50">
     <h2>Check out some recent dishes!</h2>
     <hr>
+    @foreach (Dish entry in Model)
+    {
+        <div class="d-flex">
+            <a href="/dishes/@entry.DishId" class="fs-3">@entry.Name</a>
+            <p class="fs-3 ms-3">by @entry.Chef</p>
+        </div>
+    }
 </div>
