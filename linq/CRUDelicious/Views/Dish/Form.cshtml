@@ -1,0 +1,49 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Dish
+
+<h1 class="d-flex justify-content-center">Add a New Dish!</h1>
+<div class="d-flex justify-content-between" style="padding-left: 550px; padding-right: 550px">
+    <a href="/dishes">Home</a>
+    <p>|</p>
+    <a href=".dishes/new">Add a Dish</a>
+</div>
+
+<h3>Enter the dish information</h3>
+        <form asp-controller="Dish" asp-action="/dishes/create" method="post">
+            <div class="d-flex">
+                <div class="w-25 me-5">
+                    <div class="mb-3">
+                        <label asp-for="Chef">Chef's Name</label>
+                        <input asp-for="Chef" class="form-control">
+                        <span asp-validation-for="Chef"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Name">Name of Dish</label>
+                        <input asp-for="Name" class="form-control">
+                        <span asp-validation-for="Name"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Calories"># of Calories</label>
+                        <input asp-for="Calories" class="form-control">
+                        <span asp-validation-for="Calories"></span>
+                    </div>
+                </div>
+
+                <div class="mb-3 me-5">
+                    <label asp-for="Tastiness"></label>
+                    <select asp-for="Tastiness" class="form-control" asp-items="@ViewBag.TastinessChoices"></select>
+                    <span asp-validation-for="Tastiness"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Description"></label>
+                    <textarea asp-for="Description" class="form-control" asp-items="@ViewBag.TastinessChoices"></textarea>
+                    <span asp-validation-for="Description"></span>
+                    <button class="btn btn-primary mt-3">Submit Dish</button>
+                </div>
+            </div>
+        </form>

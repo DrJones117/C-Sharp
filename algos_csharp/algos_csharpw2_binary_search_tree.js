@@ -136,7 +136,34 @@ class BinarySearchTree {
      * @returns {BinarySearchTree} This tree.
      */
     insert(newVal) {
-        //your code here
+        const node = new BSTNode(newVal);
+
+        //if empty, make the new root
+        if (this.isEmpty()) {
+            this.root = node;
+            return this;
+        }
+
+        let current = this.root;
+
+        while (true) {
+            if (newVal <= current.data) { // if less or equal, go left
+                if (current.left === null) { // if there is no left, insert here
+                    current.left = node;
+                    return this;
+                }
+
+                current = current.left;
+            } else {
+                // newVal is greater than current.data
+                if (current.right === null) { // if there is no right, insert here
+                    current.right = node;
+                    return this;
+                }
+
+                current = current.right;
+            }
+        }
     }
 
     /**
@@ -150,8 +177,116 @@ class BinarySearchTree {
      * @returns {BinarySearchTree} This tree.
      */
     insertRecursive(newVal, curr = this.root) {
-        //your code here
+        if (this.isEmpty()) {
+            this.root = new BSTNode(newVal);
+            return this;
+        }
+
+        if (newVal > curr.data) {
+            if (curr.right === null) {
+                curr.right = new BSTNode(newVal);
+                return this;
+            }
+            return this.insertRecursive(newVal, curr.right);
+        }
+
+        if (curr.left === null) {
+            curr.left = new BSTNode(newVal);
+            return this;
+        }
+        return this.insertRecursive(newVal, curr.left);
     }
+
+    /**
+ * Determines if this tree contains the given searchVal.
+ * - Time: O(?).
+ * - Space: O(?).
+ * @param {number} searchVal The number to search for in the node's data.
+ * @returns {boolean} Indicates if the searchVal was found.
+ */
+    contains(searchVal) {
+        if (this.isEmpty()) {
+            return false;
+        }
+
+        let current = this.root;
+
+        while (current) {
+            if (searchVal == current.data) 
+            {
+                return true;
+            }
+
+            if (searchVal < current.data)
+            {
+                current = current.left;
+            }
+
+            if (searchVal > current.data)
+            {
+                current = current.right;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Determines if this tree contains the given searchVal.
+     * - Time: O(?).
+     * - Space: O(?).
+     * @param {number} searchVal The number to search for in the node's data.
+     * @returns {boolean} Indicates if the searchVal was found.
+     */
+
+    containsRecursive(searchVal, node) {
+        if (node.data == searchVal)
+        {
+            return true;
+        }
+
+        if (node.data > searchVal)
+        {
+            if (node.left == null)
+            {
+                return false;
+            }
+            else
+            {
+                this.containsRecursive(searchVal, node.left);
+            }
+        }
+
+        if (node.data < searchVal)
+        {
+            if (node.right == null)
+            {
+                return false;
+            }
+            else
+            {
+                this.containsRecursive(searchVal, node.right);
+            }
+        }
+    }
+
+    helperRecursive(searchVal)
+    {
+        if (this.isEmpty())
+        {
+            return false;
+        }
+        
+        if (this.root.data == searchVal)
+        {
+            return true;
+        }
+        else
+        {
+            console.log(this.containsRecursive(searchVal, this.root))
+            this.containsRecursive(searchVal, this.root)
+        }
+    }
+
 
 
     // Logs this tree horizontally with the root on the left.
@@ -210,6 +345,8 @@ threeLevelTree.root.right.left = new BSTNode(13);
   / \    / \
 2   6  13
 */
+// console.log(threeLevelTree.contains(5));
+console.log(threeLevelTree.helperRecursive(5));
 // threeLevelTree.print();
 
 
@@ -245,37 +382,37 @@ fullTree
 
 */
 
-fullTree.print();
+// fullTree.print();
 
-// /***************** Uncomment after insert recursive method is created. ****************/
-// const fullTreeRecursive = new BinarySearchTree();
-// fullTreeRecursive
-//     .insertRecursive(25)
-//     .insertRecursive(15)
-//     .insertRecursive(10)
-//     .insertRecursive(22)
-//     .insertRecursive(4)
-//     .insertRecursive(12)
-//     .insertRecursive(18)
-//     .insertRecursive(24)
-//     .insertRecursive(50)
-//     .insertRecursive(35)
-//     .insertRecursive(70)
-//     .insertRecursive(31)
-//     .insertRecursive(44)
-//     .insertRecursive(66)
-//     .insertRecursive(90);
+/***************** Uncomment after insert recursive method is created. ****************/
+const fullTreeRecursive = new BinarySearchTree();
+fullTreeRecursive
+    .insertRecursive(25)
+    .insertRecursive(15)
+    .insertRecursive(10)
+    .insertRecursive(22)
+    .insertRecursive(4)
+    .insertRecursive(12)
+    .insertRecursive(18)
+    .insertRecursive(24)
+    .insertRecursive(50)
+    .insertRecursive(35)
+    .insertRecursive(70)
+    .insertRecursive(31)
+    .insertRecursive(44)
+    .insertRecursive(66)
+    .insertRecursive(90);
 
-// /* fullTree
-//                     root
-//                 <-- 25 -->
-//               /            \
-//             15             50
-//           /    \         /    \
-//         10     22      35     70
-//       /   \   /  \    /  \   /  \
-//     4    12  18  24  31  44 66  90
+/* fullTree
+                    root
+                <-- 25 -->
+              /            \
+            15             50
+          /    \         /    \
+        10     22      35     70
+      /   \   /  \    /  \   /  \
+    4    12  18  24  31  44 66  90
 
-// */
+*/
 
 // fullTreeRecursive.print();
