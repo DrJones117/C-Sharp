@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Dish
+
+<h1 class="text-center">Add a Dish</h1>
+
+<div class="d-flex justify-content-center">
+    <form asp-controller="Dish" asp-action="CreateDish">
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Calories"></label>
+            <input asp-for="Calories" class="form-control">
+            <span asp-validation-for="Calories" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ChefId"></label>
+            <select asp-for="ChefId" class="form-control" asp-items="@ViewBag.ChefChoices"></select>
+            <span asp-validation-for="ChefId" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Tastiness"></label>
+            <select asp-for="Tastiness" class="form-control" asp-items="@ViewBag.TastinessChoices"></select>
+            <span asp-validation-for="Tastiness" class="text-danger"></span>
+        </div>
+
+        <button class="btn btn-primary">Add Chef</button>
+    </form>
+</div>

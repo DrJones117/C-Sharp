@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Chef
+
+<h1 class="text-center">Add a Chef</h1>
+
+<div class="d-flex justify-content-center">
+    <form asp-controller="Chef" asp-action="CreateChef">
+        <div class="mb-3">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" class="form-control">
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" class="form-control">
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="BirthDate"></label>
+            <input asp-for="BirthDate" class="form-control">
+            <span asp-validation-for="BirthDate" class="text-danger"></span>
+        </div>
+
+        <button class="btn btn-primary">Add Chef</button>
+    </form>
+</div>

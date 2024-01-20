@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="text-center">Check out our dishes!</h1>
+<hr>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Chef</th>
+            <th scope="col">Tastiness</th>
+            <th scope="col">Calories</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var entry in Model)
+        {
+            <tr>
+                <td>@entry.Name</td>
+                <td>@entry.Creator.FirstName</td>
+                <td>@entry.Tastiness</td>
+                <td>@entry.Calories</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\chefs_n_dishes.props" />
+</Project>

@@ -9,51 +9,51 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = login_and_reg
 build_property.RootNamespace = login_and_reg
-build_property.ProjectDir = C:\CodingDojo\C-Sharp\entity_framework\login_and_reg\
+build_property.ProjectDir = c:\CodingDojo\C-Sharp\entity_framework\login_and_reg\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\CodingDojo\C-Sharp\entity_framework\login_and_reg
+build_property.MSBuildProjectDirectory = c:\CodingDojo\C-Sharp\entity_framework\login_and_reg
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Home/Index.cshtml]
+[c:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Home/Privacy.cshtml]
+[c:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Home/Success.cshtml]
+[c:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Home/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Home/_LogIn.cshtml]
+[c:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Home/_LogIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfTG9nSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Home/_Register.cshtml]
+[c:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Home/_Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Shared/Error.cshtml]
+[c:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/_ViewImports.cshtml]
+[c:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/_ViewStart.cshtml]
+[c:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Shared/_Layout.cshtml]
+[c:/CodingDojo/C-Sharp/entity_framework/login_and_reg/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-i9k2i6zmsh

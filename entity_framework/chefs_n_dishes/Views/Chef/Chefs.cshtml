@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<h1 class="text-center">Check out our roster of chefs!</h1>
+<hr>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">age</th>
+            <th scope="col"># of Dishes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var entry in Model)
+        {
+            <tr>
+                <td>@entry.FirstName</td>
+                <td>@(DateTime.Now.Year- entry.BirthDate.Year)</td>
+                <td>@entry.AllDishes.Count</td>
+            </tr>
+        }
+    </tbody>
+</table>
