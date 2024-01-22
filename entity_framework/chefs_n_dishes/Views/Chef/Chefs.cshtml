@@ -18,7 +18,12 @@
         @foreach (var entry in Model)
         {
             <tr>
-                <td>@entry.FirstName</td>
+                <td>
+                    <div style="width: 125px" class="d-flex justify-content-between">
+                        <p>@entry.FirstName</p>
+                        <p>@entry.LastName</p>
+                    </div>
+                </td>
                 <td>@(DateTime.Now.Year- entry.BirthDate.Year)</td>
                 <td>@entry.AllDishes.Count</td>
             </tr>
