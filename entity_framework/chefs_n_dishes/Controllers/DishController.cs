@@ -50,7 +50,7 @@ public class DishController : Controller
             new("5", "5"),
         };
 
-        return View();
+        return View("NewDish");
     }
 
     // Processes the form data.
@@ -61,34 +61,34 @@ public class DishController : Controller
         {
 
         // Model state is invalid, return to the NewDish view with the model
-        List<Chef> AllChefs = _context.Chefs.ToList();
+        // List<Chef> AllChefs = _context.Chefs.ToList();
 
-        ViewBag.ChefChoices = new List<SelectListItem>
-        {
-            new SelectListItem("---choose---", "", true, true),
-        };
+        // ViewBag.ChefChoices = new List<SelectListItem>
+        // {
+        //     new SelectListItem("---choose---", "", true, true),
+        // };
 
-        foreach (var entry in AllChefs)
-        {
-            ViewBag.ChefChoices.Add(new SelectListItem($"{entry.FirstName} {entry.LastName}", $"{entry.ChefId}"));
-        }
+        // foreach (var entry in AllChefs)
+        // {
+        //     ViewBag.ChefChoices.Add(new SelectListItem($"{entry.FirstName} {entry.LastName}", $"{entry.ChefId}"));
+        // }
 
-        ViewBag.TastinessChoices = new List<SelectListItem>
-        {
-            new SelectListItem("---choose---", "", true, true),
-            new SelectListItem("1", "1"),
-            new SelectListItem("2", "2"),
-            new SelectListItem("3", "3"),
-            new SelectListItem("4", "4"),
-            new SelectListItem("5", "5"),
-        };
+        // ViewBag.TastinessChoices = new List<SelectListItem>
+        // {
+        //     new SelectListItem("---choose---", "", true, true),
+        //     new SelectListItem("1", "1"),
+        //     new SelectListItem("2", "2"),
+        //     new SelectListItem("3", "3"),
+        //     new SelectListItem("4", "4"),
+        //     new SelectListItem("5", "5"),
+        // };
 
             var message = string.Join(" | ", ModelState.Values
             .SelectMany(v => v.Errors)
             .Select(e => e.ErrorMessage));
             Console.WriteLine(message);
 
-        return View("NewDish", newDish);
+        return NewDish();
         }
         else
         {   

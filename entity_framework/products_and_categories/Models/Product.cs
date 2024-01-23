@@ -1,6 +1,5 @@
 #pragma warning disable CS8618
 using System.ComponentModel.DataAnnotations;
-using System.Security.Cryptography.X509Certificates;
 namespace products_and_categories.Models;
 
 public class Product

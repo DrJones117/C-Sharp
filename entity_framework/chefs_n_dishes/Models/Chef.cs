@@ -1,5 +1,6 @@
 #pragma warning disable CS8618
 using System.ComponentModel.DataAnnotations;
+using System.Runtime.CompilerServices;
 namespace chefs_n_dishes.Models;
 public class Chef
 {
@@ -14,6 +15,7 @@ public class Chef
 
     [Required]
     [BirthDateValidation]
+    [DataType(DataType.Date)]
     public DateTime BirthDate {get;set;}
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
