@@ -38,6 +38,7 @@ class MinHeap {
      */
     top() {
         //your code here
+        return this.heap.length > 1 ? this.heap[1] : null;
     }
 
     /**
@@ -51,8 +52,58 @@ class MinHeap {
      */
     insert(num) {
         //your code here
+        //add item to heap
+        this.heap.push(num);
+
+        //get index of new item
+        let insertedIdx = this.heap.length - 1;
+        //get index of new item's parent
+        let parentIdx = this.idxOfParent(insertedIdx);
+        //while value at insertion point less than its parent, swap and recalculate parent
+        while (this.heap[insertedIdx] < this.heap[parentIdx] && parentIdx >= 1) {
+            //perform swap
+            let temp = this.heap[insertedIdx];
+            this.heap[insertedIdx] = this.heap[parentIdx];
+            this.heap[parentIdx] = temp;
+            //swapped value is now at old parent
+            insertedIdx = parentIdx;
+            //get parent of old parent
+            parentIdx = this.idxOfParent(insertedIdx);
+        }
+        return this;
     }
 
+
+    /**
+   * Extracts the min num from the heap and then re-orders the heap to
+   * maintain order so the next min is ready to be extracted.
+   * 1. Save the first node to a temp var.
+   * 2. Pop last node off and set idx1 equal to the popped value.
+   * 3. Iteratively swap the old last node that is now at idx1 with it's
+   *    smallest child IF the smallest child is smaller than it.
+   * - Time: O(log n) logarithmic due to shiftDown.
+   * - Space: O(1) constant.
+   * @returns {?number} The min number or null if empty.
+   */
+    extract() { 
+        if (this.heap.length <= 1)
+        {
+            return this.heap.pop();
+        }
+
+        let temp = this.heap[1];
+
+        // let popped = this.heap[this.heap.length - 1];
+        this.heap[1] = this.heap.pop();
+
+        let right = this.idxOfRightChild(1);
+        let left = this.idxOfLeftChild(1);
+
+        while (this.heap[left] < this.heap[1])
+        {
+            if ()
+        }
+    }
     /**
      * Logs the tree horizontally with the root on the left and the index in
      * parenthesis using reverse inorder traversal.
