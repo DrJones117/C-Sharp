@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+@{
+    int? UserId = Context.Session.GetInt32("UserId");
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Wedding of</th>
+            <th>Date</th>
+            <th>Guest Count</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Wedding entry in Model)
+        {
+            bool rsvp = entry.Attendees.Any(a => a.UserId == UserId);
+            <tr>
+                <td>
+                    <a asp-action="ShowWedding" asp-controller="Wedding" asp-route-weddingId="@entry.WeddingId">@entry.WedderOne & @entry.WedderTwo</a>
+                </td>
+                <td>@entry.Date.ToString("MMM d yyyy")</td>
+                <td>@entry.Attendees.Count</td>
+                <td>
+                    @if (entry.UserId == UserId)
+                    {
+                        <form asp-action="DeleteWedding" asp-controller="Wedding" asp-route-weddingId="@entry.WeddingId" method="post">
+                            <button class="btn btn-danger">Cancel</button>
+                        </form orm>
+                    }
+                    else
+                    {
+                        <form asp-action="ToggleAttendence" asp-route-weddingId="@entry.WeddingId" method="post">
+                            <button class="btn btn-secondary">@(rsvp ? "Un-RSVP" : "RSVP")</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+        <td></td>
+    </tbody>
+</table>

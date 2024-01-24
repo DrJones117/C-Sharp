@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Show Wedding";
+}
+
+@model Wedding
+
+<div class="row">
+    <div>
+        <h1>@Model.WedderOne & @Model.WedderTwo's wedddings</h1>
+        <p>Date: @Model.Date</p>
+        <p>Guests</p>
+        <ul class="list-group w-25 border border-black border-dark border-4 rounded">
+            @foreach (RSVP entry in @Model.Attendees)
+            {
+                <li class="list-group-item">@entry.Responder.FirstName @entry.Responder.LastName</li>
+            }
+        </ul>
+    </div>
+
+</div>
