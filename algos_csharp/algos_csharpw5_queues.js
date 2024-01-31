@@ -69,7 +69,7 @@ class Queue {
 
 /* Rebuild the above class using a linked list instead of an array. */
 
-/* 
+/*
 In order to maintain an O(1) enqueue time complexity like .push with an array
 We add a tail to our linked list so we can go directly to the last node
 */
@@ -145,7 +145,7 @@ class LinkedListQueue {
      */
     dequeue() {
         // Similar to the shift() array method.
-        // Remember to update the size property. 
+        // Remember to update the size property.
         if (this.isEmpty())
         {
             return null;
@@ -176,7 +176,7 @@ class LinkedListQueue {
      * @returns {any} The first item.
      */
     front() {
-        // Similar to peak from Stacks. 
+        // Similar to peak from Stacks.
         if (this.isEmpty())
         {
             return null;
@@ -207,9 +207,74 @@ class LinkedListQueue {
         return vals;
     }
 
-    // ❗
-    // 📦
+}
 
+// * compare q1 && q2 size?
+// * the size property dictates the amount of passes the loop has to traverse
+
+function compareQue(q1, q2)
+{
+    // * if ques do not have same size property value - we know ques are not equal - RETURN FALSE
+    if (q1.len() !== q2.len())
+    {
+        return false;
+    }
+
+    if (q1.front() !== q2.front())
+    {
+        return false;
+    }
+
+    // * we always want to compare the value stored at q1.head && q2.head and then remove it?
+    // * initialize Variable to return True -
+    let isEqual = true;
+    // * set up runner varaiables to represent the heads of the ques
+    // * Remember heads of ques are the End of Que
+
+    let countTracker = 0;
+    let totalLength = q1.len();
+
+    while (countTracker < totalLength)
+    {
+        let item1 = q1.dequeue();
+        let item2 = q2.dequeue();
+
+        if (item1 !== item2)
+        {
+            isEqual = false;
+        }
+
+        q1.enqueue(item1);
+        q2.enqueue(item2);
+        countTracker++;
+    }
+    return isEqual;
+
+    // ! total length && total count
+    // ! while total count< total length{}
+
+    // for (let i = 0 ; i < q1.size ; i ++ )
+    // {
+    //     if (q1Runner.data === q2Runner.data)
+    //     {
+    //         q1.dequeue();
+    //         q2.dequeue();
+
+    //         q1.enqueue(q1Runner.data);
+    //         q2.enqueue(q2Runner.data);
+    //     }
+
+    //     q1.dequeue();
+    //     q2.dequeue();
+
+    //     q1.enqueue(q1Runner.data);
+    //     q2.enqueue(q2Runner.data);
+    //     isEqual = false;
+
+    //     q1Runner = q1.head;
+    //     q2Runner = q2.head;
+    // }
+    return isEqual
 }
 
 
@@ -218,9 +283,16 @@ const arrayQueue = new Queue();
 arrayQueue.items = [1, 2, 9, 3, 3, 6];
 arrayQueue.print();
 
-const listQueue = new LinkedListQueue();
-listQueue.seed([1, 2, 9, 3, 3, 6]);
-listQueue.print();
+const listQueueSame = new LinkedListQueue();
+listQueueSame.seed([1, 2, 9, 3, 3, 6]);
+
+
+const listQueueSame2 = new LinkedListQueue();
+listQueueSame2.seed([1, 2, 9, 3, 3, 6]);
+
+const listQueueDifferent = new LinkedListQueue();
+listQueueDifferent.seed([1, 2, 9, 1, 2, 3]);
+
 
 
 const newList = new LinkedListQueue();
@@ -229,8 +301,16 @@ newList.enqueue(4);
 newList.enqueue(3);
 
 
-console.log(newList.dequeue());
+// console.log(newList.dequeue());
 
-console.log(newList.front());
-newList.print();
+// console.log(newList.front());
+
 // console.log(newList.len);
+
+
+console.log("ListQueSame Before Compare" + listQueueSame.print())
+console.log("ListQueSame2 Before Compare" + listQueueSame.print())
+console.log("Should be true " + compareQue(listQueueSame, listQueueSame2));
+console.log("ListQueSame After Compare" + listQueueSame.print())
+console.log("ListQueSame2 After Compare" + listQueueSame.print())
+console.log("Should be false " + compareQue(listQueueSame, listQueueDifferent));
