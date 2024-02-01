@@ -249,39 +249,67 @@ function compareQue(q1, q2)
         countTracker++;
     }
     return isEqual;
+}
 
-    // ! total length && total count
-    // ! while total count< total length{}
+/**
+ * Determines whether the sum of the left half of the queue items is equal to
+ * the sum of the right half. Avoid indexing the queue items directly via
+ * bracket notation, use the queue methods instead for practice.
+ * Use no extra array or objects.
+ * If queue cannot be evenly divided, return false.
+ * The queue should be returned to it's original order when done.
+ * - Time: O(n^2) quadratic, n = queue length. Quadratic due to dequeue on an
+ *     array queue being O(n).
+ * - Space: O(1) constant.
+ * @returns {boolean} Whether the sum of the left and right halves is equal.
+ */
+function isSumOfHalvesEqual(q1) {
+    // if the size of the queue is odd or if its empty, we will want to early exit.
+    if (q1.len() % 2 != 0 || q1.isEmpty())
+    {
+        return false;
+    }
+    
+    // Initialize a count variable as a stopping point for the while loop.
+    let count = 0;
 
-    // for (let i = 0 ; i < q1.size ; i ++ )
-    // {
-    //     if (q1Runner.data === q2Runner.data)
-    //     {
-    //         q1.dequeue();
-    //         q2.dequeue();
+    // this gives us the length that each half should be.
+    let halfLength = q1.len() / 2;
 
-    //         q1.enqueue(q1Runner.data);
-    //         q2.enqueue(q2Runner.data);
-    //     }
+    // variables to keep tracck the sum of each half of the Queue
+    let firstHalfSum = 0;
+    let secondHalfSum = 0;
 
-    //     q1.dequeue();
-    //     q2.dequeue();
 
-    //     q1.enqueue(q1Runner.data);
-    //     q2.enqueue(q2Runner.data);
-    //     isEqual = false;
+    // Runs until count is equal to the whole Queue's length.
+    while (count < halfLength * 2)
+    {
+        // if count is less than the length of half of the Queue. We will add to the first sum.
+        let item1 = q1.dequeue();
 
-    //     q1Runner = q1.head;
-    //     q2Runner = q2.head;
-    // }
-    return isEqual
+        if (count < halfLength)
+        {
+            firstHalfSum += item1;
+        }
+        // Otherwise we add to the second sum.
+        else
+        {
+            secondHalfSum += item1;
+        }
+
+        q1.enqueue(item1);
+        count++;
+    }
+
+    // return the comparison. (true or false)
+    return firstHalfSum === secondHalfSum;
 }
 
 
 
 const arrayQueue = new Queue();
 arrayQueue.items = [1, 2, 9, 3, 3, 6];
-arrayQueue.print();
+// arrayQueue.print();
 
 const listQueueSame = new LinkedListQueue();
 listQueueSame.seed([1, 2, 9, 3, 3, 6]);
@@ -292,6 +320,16 @@ listQueueSame2.seed([1, 2, 9, 3, 3, 6]);
 
 const listQueueDifferent = new LinkedListQueue();
 listQueueDifferent.seed([1, 2, 9, 1, 2, 3]);
+
+const sumOfHalvesNot = new LinkedListQueue();
+sumOfHalvesNot.seed([1, 2, 9, 1, 2, 3, 20]);
+
+
+console.log(isSumOfHalvesEqual(listQueueSame2));
+listQueueSame2.print();
+console.log("");
+console.log(isSumOfHalvesEqual(sumOfHalvesNot));
+sumOfHalvesNot.print();
 
 
 
@@ -308,9 +346,9 @@ newList.enqueue(3);
 // console.log(newList.len);
 
 
-console.log("ListQueSame Before Compare" + listQueueSame.print())
-console.log("ListQueSame2 Before Compare" + listQueueSame.print())
-console.log("Should be true " + compareQue(listQueueSame, listQueueSame2));
-console.log("ListQueSame After Compare" + listQueueSame.print())
-console.log("ListQueSame2 After Compare" + listQueueSame.print())
-console.log("Should be false " + compareQue(listQueueSame, listQueueDifferent));
+// console.log("ListQueSame Before Compare" + listQueueSame.print())
+// console.log("ListQueSame2 Before Compare" + listQueueSame.print())
+// console.log("Should be true " + compareQue(listQueueSame, listQueueSame2));
+// console.log("ListQueSame After Compare" + listQueueSame.print())
+// console.log("ListQueSame2 After Compare" + listQueueSame.print())
+// console.log("Should be false " + compareQue(listQueueSame, listQueueDifferent));
