@@ -392,6 +392,45 @@ class SinglyLinkedList {
             return this
         }
     }
+
+    /**
+    * In a sorted list of nodes with integers as data, removes the nodes with
+    * duplicate data so that only one node of each integer data remains.
+    * Time: O(?).
+    * Space: O(?).
+    * @returns {SinglyLinkedList} This list after dupes are removed.
+    */
+    removeDupesSorted() {
+        // Assume this SLL is sorted! 🌻
+        // Example: 1 , 1 , 1 , 2 , 3 , 3, 4 , 5 , 5 
+
+        let runner = this.head;
+        let count = 0;
+
+        while (runner.next) 
+        {
+            if (runner.next.data == runner.data)
+            {
+                runner.next = runner.next.next;
+            }
+            else
+            {
+                runner = runner.next;
+            }
+        }
+
+        return this;
+    }
+    
+    /**
+    * Removes all the nodes that have a negative integer as their data.
+    * - Time: (?).
+    * - Space: (?).
+    * @returns {SinglyLinkedList} This list after the negatives are removed.
+    */
+    removeNegatives() {
+        // Note: If our head has a negative value, we'll want to replace it after it's removed.
+    }
 }
 
 /******************************************************************* 
@@ -415,13 +454,16 @@ const unorderedList = new SinglyLinkedList().insertAtBackMany([
 // console.log(firstThreeList.toArr(), "should be", "[1, 2, 3, 4, 5, 6]")
 
 //Test case for move min to front
-unorderedList.moveMinToFront();
-console.log(unorderedList.toArr(), "should be", "[-10, -5, 4, -3, 6, 1, -7, 2]")
+// unorderedList.moveMinToFront();
+// console.log(unorderedList.toArr(), "should be", "[-10, -5, 4, -3, 6, 1, -7, 2]")
 
 
   /* node 4 connects to node 1, back to head */
-  // const perfectLoopList = new SinglyLinkedList().insertAtBackMany([1, 2, 3, 4]);
-  // perfectLoopList.head.next.next.next = perfectLoopList.head;
+    const dupeList = new SinglyLinkedList().insertAtBackMany([1 , 1 , 1, 2 , 3 , 3 , 4 , 5 , 5 ]);
+    dupeList.removeDupesSorted();
+    console.log(dupeList.toArr())
+
+//   perfectLoopList.head.next.next.next = perfectLoopList.head;
 
   /* node 4 connects to node 2 */
   // const loopList = new SinglyLinkedList().insertAtBackMany([1, 2, 3, 4]);
